@@ -1,0 +1,309 @@
+.background {
+  background: url(../Images/background.png);
+  background-size: 100%;
+ /* position: absolute;*/
+/*  left: 0px;
+  top: 0px;*/
+/*  width: 1018px;*/
+  height: 1018px;
+/*  margin: 0 auto;*/
+/*  z-index: 1;*/
+margin-top: 45px; 
+
+}
+
+.logo {
+/*	position: absolute;*/
+	/*padding-top: 15px;*/
+	margin-left: 37px;
+	float: left;
+	margin-top: 15px; 
+	display: block; 
+}
+
+.parent {
+	margin: 0 auto;
+	width: 1002px;
+	height: 988px;
+	background-color: #ffffff;
+	overflow: hidden;
+	/*margin-left: 142px; */
+
+}
+
+.white_main {
+  background-image: url("images/white_main.png");
+  position: absolute;
+  left: 142px;
+  top: 38px;
+  width: 1018px;
+  height: 991px;
+  z-index: 4;
+}
+
+.photo {
+	width: 100%;
+	height: 232px;
+	position: hidden;
+	margin-top: 0px;
+	display: block;
+}
+
+.center_panel {
+	width: 100%;
+	height: 34px;
+	background-color: #333333;
+	display: block;
+}
+
+.sidebar_left {
+	float: left;
+	width: 209px;
+	height: 543px;
+	background-color: #edeef0;
+}
+
+.sidebar_right {
+	float: right;
+	width: 209px;
+	height: 543px;
+	background-color: #edeef0;
+	padding-bottom: 20px; 
+	overflow: hidden;
+}
+
+h2 {
+	font-family: Tahoma;
+	font-size: 18px;
+	text-align: center;
+}
+
+p {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-align: center;
+}
+
+span {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-align: center;
+	position: absolute;
+  left: 551px;
+  top: 1039px;
+  color: #dee7ee;
+}
+
+.contacts {
+	float: right;
+	color: #128aa7;
+	font-family: Tahoma;
+	font-size: 11px;
+	text-align: left;
+	margin-right: 5px; 
+	margin-top: 10px;
+	margin-left: 200px; 
+	width: 150px;
+	line-height: 0px;
+}
+
+.countries {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.flag {
+	float:right;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/*.contries {
+  position: absolute;
+  margin-right: 141px;
+  margin-top: 179px;*/
+ /* width: 327px;
+  height: 57px;
+  z-index: 66;*/
+}
+.india {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 42px;
+  height: 57px;
+  z-index: 65;
+}
+.Индия {
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: rgb( 18, 138, 167 );
+  text-decoration: underline;
+  text-align: left;
+  position: absolute;
+  left: 7px;
+  top: 44.365px;
+  width: 29px;
+  height: 11px;
+  z-index: 64;
+}
+.i_flag {
+  background-image: url("images/i_flag.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  z-index: 63;
+}
+.nepal {
+  position: absolute;
+  left: 58px;
+  top: 0px;
+  width: 42px;
+  height: 57px;
+  z-index: 61;
+}
+.Непал_ {
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: rgb( 18, 138, 167 );
+  text-decoration: underline;
+  text-align: left;
+  position: absolute;
+  left: 7px;
+  top: 44.365px;
+  width: 29px;
+  height: 11px;
+  z-index: 60;
+}
+.n_flag {
+  background-image: url("images/n_flag.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  z-index: 59;
+}
+.tibet {
+  position: absolute;
+  left: 114px;
+  top: 0px;
+  width: 42px;
+  height: 57px;
+  z-index: 57;
+}
+.Тибет_ {
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: rgb( 18, 138, 167 );
+  text-decoration: underline;
+  text-align: left;
+  position: absolute;
+  left: 6px;
+  top: 44.365px;
+  width: 28px;
+  height: 12px;
+  z-index: 56;
+}
+.t_flag {
+  background-image: url("images/t_flag.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  z-index: 55;
+}
+.bhutan {
+  position: absolute;
+  left: 169px;
+  top: 0px;
+  width: 42px;
+  height: 57px;
+  z-index: 53;
+}
+.Бутан {
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: rgb( 18, 138, 167 );
+  text-decoration: underline;
+  text-align: left;
+  position: absolute;
+  left: 8px;
+  top: 44.365px;
+  width: 27px;
+  height: 11px;
+  z-index: 52;
+}
+.b_flag {
+  background-image: url("images/b_flag.png");
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  z-index: 51;
+}
+.sri_lanka {
+  position: absolute;
+  left: 220px;
+  top: 0px;
+  width: 53px;
+  height: 57px;
+  z-index: 49;
+}
+.Sri_Lanka {
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: rgb( 18, 138, 167 );
+  text-decoration: underline;
+  text-align: left;
+  position: absolute;
+  left: 0px;
+  top: 44.365px;
+  width: 53px;
+  height: 11px;
+  z-index: 48;
+}
+.s_flag {
+  background-image: url("images/s_flag.png");
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  z-index: 47;
+}
+.maldives {
+  position: absolute;
+  left: 280px;
+  top: 0px;
+  width: 47px;
+  height: 57px;
+  z-index: 45;
+}
+.Maldives {
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: rgb( 18, 138, 167 );
+  text-decoration: underline;
+  text-align: left;
+  position: absolute;
+  left: 0px;
+  top: 44.365px;
+  width: 47px;
+  height: 11px;
+  z-index: 44;
+}
+.m_flag {
+  background-image: url("images/m_flag.png");
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  z-index: 43;
+}
