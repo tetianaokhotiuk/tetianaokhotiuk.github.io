@@ -1,5 +1,4 @@
 
-/* Connect font "Tahoma-Regular"; */
 @font-face {
     font-family: 'Tahoma';
     src: local("Tahoma"), local("TahomaRegular"),
@@ -12,7 +11,6 @@
     font-style: normal;
 }
  
-/* Connect font "Tahoma-Bold"; */
 @font-face {
    font-family: 'Tahoma';
     src: local("Tahoma"), local("TahomaBold"),
@@ -30,7 +28,6 @@
 	background-size: 100%;
 	height: 1018px;
 	margin-top: 45px; 
-
 }
 
 .logo {
@@ -179,24 +176,24 @@ ul.dropdown li {
 	position: relative; 
 }
 
- ul.dropdown,
- ul.dropdown-inside {
+ul.dropdown,
+ul.dropdown-inside {
 	padding: 0;
 	margin: 0;
- }
+}
 
- ul.dropdown-inside {
+ul.dropdown-inside {
 	position: absolute;
 	left: -9999px;
- }
+}
 
- ul.dropdown li.dropdown-top {
+ul.dropdown li.dropdown-top {
 	display: inline;
 	float: left;
 	margin: 0 0px 0 0;
- }
+}
 
- ul.dropdown li.dropdown-top a {
+ul.dropdown li.dropdown-top a {
 	display: block;
 	float: left;
 	font-family: 'Tahoma';
@@ -208,7 +205,7 @@ ul.dropdown li {
 	padding-left: 0px;
 	padding-top: 0px; 
 	padding-bottom: 0px;
- }
+}
 
 ul.clearfix li{
 	display: block;
@@ -217,7 +214,8 @@ ul.clearfix li{
 	padding-left: 10px;
 	height: 50px;
 }
- ul.dropdown a.dropdown-top:hover .dropdown-inside { 
+
+ul.dropdown a.dropdown-top:hover .dropdown-inside { 
  	padding-top: 0px;
  	padding-right: 20px;
  	padding-bottom: 0px;
@@ -225,25 +223,25 @@ ul.clearfix li{
  	color: #333333;
  	background: #fff; 
  	margin-top: 20px;
- }
+}
 
- ul.dropdown li.dropdown-top:hover .dropdown-inside {
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
 	display: block;
 	left: 0;
 	color: #ffffff;
 	margin-top: 23px;
 	background-color: #333333;
- }
+}
 
- ul.dropdown .dropdown-inside li:hover { 
+ul.dropdown .dropdown-inside li:hover { 
  	background: #A9A9A9; 
  	color: black;
- }
+}
 
-  ul.dropdown .dropdown-inside:hover { 
+ul.dropdown .dropdown-inside:hover { 
  	background-color: #333333; 
  	color: black;
- }
+}
 
 .clearfix:after {
 	content: ".";
