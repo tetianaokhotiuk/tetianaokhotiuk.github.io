@@ -46,6 +46,9 @@
 	height: 988px;
 	background-color: #ffffff;
 	overflow: hidden;
+	-webkit-box-shadow: 0 2px 5px 1px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 2px 5px 1px rgba(0,0,0,.4);
+	box-shadow: 0 2px 5px 1px rgba(0,0,0,.4);
 }
 
 .photo {
@@ -79,6 +82,7 @@
 	background-color: #edeef0;
 	padding-bottom: 20px; 
 	overflow: hidden;
+	display: block;
 }
 
 h2 {
@@ -252,3 +256,4 @@ ul.clearfix li{
 .clearfix {
 	margin: 0;
 }
+
