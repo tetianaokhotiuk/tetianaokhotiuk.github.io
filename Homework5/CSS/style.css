@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneue-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue-webfont.woff') format('woff'),
+         url('fonts/helveticaneue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.background {
+	width: 1349px;
+	height: 1080px;
+	background-size: 100%;
+	margin: 0 auto;
+}
+
+.panel {
+	position: absolute;
+	top: 0;
+	width: 1349px;
+	height: 40px;
+	background-color: #074f8d;
+	margin: 0 auto;
+}
+
+.container {
+	position: absolute;
+	left: 394px;
+	top: 249px;
+	height: 613px;
+	width: 560px;
+	background-color: rgba(57,64,54,0.631);
+}
+
+h2 {
+	text-align: center;
+	color: #ffffff;
+	font-family: "Helvetica Neue" Arial sans-serif;
+	
+}
+
+h2:first-letter {
+	text-transform: capitalize;
+}
+
+.facebook {
+	padding: 25px 140px 15px;
+}
+
+.name {
+	margin: 20px 140px 10px;
+	width: 280px;
+	height: 30px;
+	font-size: 14px;
+	clear: both;
+}
+
+input.input {
+	height: 30px;
+	width: 260px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	background-color: #0f0f0f;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #686c68;
+	clear: both;
+}
+
+input.input:hover {
+	background-color: #1b5288;
+	-webkit-box-shadow: 0px 0px 11px 3px rgba(104,155,204,0.67);
+	-moz-box-shadow: 0px 0px 11px 3px rgba(104,155,204,0.67);
+	box-shadow: 0px 0px 11px 3px rgba(104,155,204,0.67);
+}
+
+.menu li {
+	float: right;
+	display: block;
+	padding: 11px 20px 13px 20px;
+	color: #357fb9;
+	font-size: 14px;
+}
+
+.menu {
+	margin: 0;
+}
+
+li:nth-child(2) {
+	color: #ffffff;
+}
+
+li:first-child {
+	color: #ffffff;
+}
+
+li:nth-child(3) {
+	border-left: 1px solid #357fb9;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	padding-bottom: 0;
+}
+
+.menu li:hover {
+	background-color: #4eabda;
+	color: #ffffff;
+}
+
+li:first-child:hover {
+	background: url(../images/layer.png) no-repeat;
+	background-size: 100%;
+}
+
+li a {
+	color: #ffffff;
+}
+
+li:nth-child(2):hover {
+	background: url(../images/layer.png) no-repeat;
+}
+
+li:nth-child(3):hover {
+	margin: 0;
+	padding-bottom: 2px;
+	padding-top: 12px;
+}
+
+.checkbox {
+	padding: 20px 140px 0;
+	color: #cccccc;
+}
+
+button {
+	padding: 7px 10px 10px 10px;
+	color: #ffffff;
+	background: url(../images/layer.png) no-repeat;
+	font-size: 14px;
+	border: none;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	height: 30px;
+}
+
+.button {
+	margin: 16px 207px;
+	padding-bottom: 10px;
+	display: block;
+	clear: both;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.hr1 {
+	float: left;
+	margin: 2px 4px 20px 140px; 
+	width: 118px;
+	height: 5px;
+	border-bottom: 1px solid  #999;
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+}
+
+.hr2 {
+	float: left;
+	margin: 2px 5px 20px 4px; 
+	width: 118px;
+	height: 5px;
+	border-bottom: 1px solid  #999;
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+}
+
+span {
+	float: left;
+	color: #999;
+}
+
+p {
+	line-height: 2px;
+	text-align: center;
+	color: #ccc;
+	font-size: 11px;
+	font-family: "Helvetica Neue" Arial sans-serif;
+}
+
+label {
+	font-family: "Helvetica Neue" Arial sans-serif;
+}
+
