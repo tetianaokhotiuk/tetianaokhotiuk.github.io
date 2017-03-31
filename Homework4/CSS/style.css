@@ -111,6 +111,13 @@ span {
 	text-align: center;
 }
 
+ul.clearfix li:nth-child(2) {
+	width: 60px;
+	text-align: center;
+	padding-right: 0;
+	padding-left: 0; 
+}
+
 .contacts {
 	float: right;
 	color: #128aa7;
@@ -254,3 +261,6 @@ ul.dropdown .dropdown-inside:hover {
 	margin: 0;
 }
 
+small {
+	font-size: 8px;
+}
