@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('fonts/helveticaneue-webfont.woff2') format('woff2'),
-         url('fonts/helveticaneue-webfont.woff') format('woff'),
-         url('fonts/helveticaneue-webfont.ttf') format('truetype');
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 .background {
-	width: 1349px;
+	width: 100%;
 	height: 1080px;
 	background-size: 100%;
 	margin: 0 auto;
@@ -17,7 +17,7 @@
 .panel {
 	position: absolute;
 	top: 0;
-	width: 1349px;
+	width: 100%;
 	height: 40px;
 	background-color: #074f8d;
 	margin: 0 auto;
@@ -34,9 +34,8 @@
 
 h2 {
 	text-align: center;
-	color: #ffffff;
-	font-family: "Helvetica Neue" Arial sans-serif;
-	
+	color: #fff;
+	font-family: "Helvetica Neue Regular", Arial, sans-serif;
 }
 
 h2:first-letter {
@@ -88,11 +87,11 @@ input.input:hover {
 }
 
 li:nth-child(2) {
-	color: #ffffff;
+	color: #fff;
 }
 
 li:first-child {
-	color: #ffffff;
+	color: #fff;
 }
 
 li:nth-child(3) {
@@ -104,7 +103,7 @@ li:nth-child(3) {
 
 .menu li:hover {
 	background-color: #4eabda;
-	color: #ffffff;
+	color: #fff;
 }
 
 li:first-child:hover {
@@ -113,7 +112,7 @@ li:first-child:hover {
 }
 
 li a {
-	color: #ffffff;
+	color: #fff;
 }
 
 li:nth-child(2):hover {
@@ -128,12 +127,12 @@ li:nth-child(3):hover {
 
 .checkbox {
 	padding: 20px 140px 0;
-	color: #cccccc;
+	color: #ccc;
 }
 
 button {
 	padding: 7px 10px 10px 10px;
-	color: #ffffff;
+	color: #fff;
 	background: url(../images/layer.png) no-repeat;
 	font-size: 14px;
 	border: none;
@@ -172,8 +171,8 @@ button {
 	height: 5px;
 	border-bottom: 1px solid  #999;
 	-webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
 }
 
 span {
@@ -186,10 +185,10 @@ p {
 	text-align: center;
 	color: #ccc;
 	font-size: 11px;
-	font-family: "Helvetica Neue" Arial sans-serif;
+	font-family: "Helvetica Neue Regular", Arial, sans-serif;
 }
 
 label {
-	font-family: "Helvetica Neue" Arial sans-serif;
+	font-family: "Helvetica Neue Regular", Arial, sans-serif;
 }
 
