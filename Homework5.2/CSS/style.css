@@ -1,0 +1,16 @@
+.background {
+	background-color: #000;
+}
+
+.main {
+	background-color: #fff;
+	width: 510px;
+	height: 550px;
+	margin: 60px auto;
+}
+
+table, tr, td {
+	border: 10px solid #000;
+	border-collapse: collapse;
+}
+
