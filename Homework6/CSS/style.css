@@ -1,0 +1,124 @@
+.wrapper {
+	margin: 0 auto;
+	width: 998px;
+	height: 1310px;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+header {
+	position: absolute;
+	height: 57px;
+	display: block;
+}
+
+.number1 {
+	position: relative;
+	padding: 22px 0px 11px 78px;
+	float: left;
+	font-family: Arial;
+	font-size: 18px;
+	color: #878e91;
+	font-weight: 600;
+}
+
+.number2 {
+	position: relative;
+	padding: 22px 6px 0 6px;
+	float: left;
+	font-family: Arial;
+	font-size: 18px;
+	color: #878e91;
+	font-weight: 600;
+}
+
+.top_panel {
+	position: relative;
+	float: left;
+	display: block;
+	width: 495px;
+	height: 25px;
+	background: linear-gradient(to top, #0e385d, #1e6383);
+	border-radius: 4px;
+	margin: 18px 0px 11px 9px;
+}
+
+.login {
+	position: relative;
+	float: left;
+	padding: 3px 0px 3px 25px;
+	border-radius: 1px; 
+}
+
+.password {
+	position: relative;
+	float: left;
+	padding: 3px 0px 3px 7px;
+	border-radius: 1px; 
+}
+
+input {
+	width: 113px;
+	height: 12px;
+	/*-webkit-box-shadow: 1px 1px 8px 1px rgba(155,161,163,1);
+-moz-box-shadow: 1px 1px 8px 1px rgba(155,161,163,1);
+box-shadow: 1px 1px 8px 1px rgba(155,161,163,1);*/
+}
+
+.top li {
+	display: block;
+	float: left;
+	font-size: 11px;
+	color: #fff;
+	padding: 5px 0px 3px 0px;
+	margin: 0;
+	position: relative;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+.zazor {
+	position: relative;
+	left: 45px;
+  top: 54px;
+  width: 909px;
+  height: 237px;
+}
+
+.middle_panel {
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb( 13, 22, 66 );
+	border-radius: 4px;
+	background-image: -moz-linear-gradient( 90deg, rgb( 0, 0, 0 ) 0%, rgb( 87, 96, 104 ) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb( 0, 0, 0 ) 0%, rgb( 87, 96, 104 ) 100%);
+	box-shadow: 1.5px 2.598px 5px 0px rgb( 0, 0, 0 );
+	position: absolute;
+	left: 45px;
+	top: 298px;
+	width: 908px;
+	height: 31px;
+}
+
+.middle_panel li {
+	display: block;
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	padding: 5px 8px 3px 25px;
+	margin: 0;
+	position: relative;
+	font-family: "Lucida Sans Unicode";
+  color: rgb( 255, 255, 255 );
+}
+
+.middle_panel li:first-child {
+	padding-left: 145px; 
+}
+
+/*.middle_panel li:nth(2)-child {
+	padding-left: 24px; 
+}*/

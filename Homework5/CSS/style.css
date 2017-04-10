@@ -95,10 +95,17 @@ a.a {
 	color: #fff;
 }
 
-ul.menu li:nth-child(3) {
-	border-left: 1px solid #357fb9;
-	padding-bottom: 2px;
+li.a {
+	color: #fff;
+}
+
+li a.a {
 	padding-top: 10px;
+}
+
+ul.menu li:nth-child(2) {
+	border-left: 1px solid #357fb9;
+	padding-top: 0;
 }
 
 .menu li:hover {
@@ -110,7 +117,7 @@ a:hover {
 	color: #fff;
 }
 
-li:first-child:hover {
+li:first-child:hover,focus {
 	background-size: 100%;
 	background: linear-gradient(to top, #2f7cc5, #4ca8d9);
 }
@@ -119,8 +126,8 @@ li:nth-child(2):hover {
 	background: linear-gradient(to top, #2f7cc5, #4ca8d9);
 }
 
-li:nth-child(3):hover {
-	margin: 0;
+li:nth-child(2):before {
+	content: url(../images/flag.png);
 }
 
 .checkbox {
