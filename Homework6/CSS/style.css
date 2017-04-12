@@ -12,6 +12,10 @@ header {
 	display: block;
 }
 
+.container {
+	position: relative;
+}
+
 .number1 {
 	position: relative;
 	padding: 22px 0px 11px 78px;
@@ -83,9 +87,9 @@ ul {
 .zazor {
 	position: relative;
 	left: 45px;
-  top: 54px;
-  width: 909px;
-  height: 237px;
+	top: 54px;
+	width: 909px;
+	height: 237px;
 }
 
 .middle_panel {
@@ -112,13 +116,95 @@ ul {
 	margin: 0;
 	position: relative;
 	font-family: "Lucida Sans Unicode";
-  color: rgb( 255, 255, 255 );
+	color: rgb( 255, 255, 255 );
 }
 
 .middle_panel li:first-child {
 	padding-left: 145px; 
 }
 
-/*.middle_panel li:nth(2)-child {
-	padding-left: 24px; 
-}*/
+.search1 {
+  border: 1px solid rgb( 156, 156, 157 );
+  border-radius: 17px;
+  background-color: rgb( 255, 255, 255 );
+  box-shadow: 2.5px 4.33px 5px 0px rgb( 104, 104, 104 );
+  position: absolute;
+  left: 50px;
+  top: 343px;
+  width: 412px;
+  height: 132px;
+}
+
+.search2 {
+  border: 1px solid rgb( 156, 156, 157 );
+  border-radius: 18px;
+  background-color: rgb( 255, 255, 255 );
+  box-shadow: 2.5px 4.33px 5px 0px rgb( 150, 150, 150 );
+  position: absolute;
+  left: 479px;
+  top: 342px;
+  width: 190px;
+  height: 134px;
+}
+
+.search3 {
+  border: 1px solid rgb( 156, 156, 157 );
+  border-radius: 16px;
+  background-color: rgb( 255, 255, 255 );
+  box-shadow: 2.5px 4.33px 5px 0px rgb( 150, 150, 150 );
+  position: absolute;
+  left: 681px;
+  top: 342px;
+  width: 266px;
+  height: 133px;
+}
+
+.main {
+	/*display: flex;
+	flex-wrap: wrap;
+	 flex: calc(100% / 3);
+	flex-flow: row wrap;
+	justify-content: space-around;
+	text-align: center;*/
+/*	justify-content: center;*/
+  border-radius: 3px;
+  background-image: -moz-linear-gradient( 90deg, rgb( 35, 75, 93 ) 0%, rgb( 201, 207, 209 ) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 35, 75, 93 ) 0%, rgb( 201, 207, 209 ) 100%);
+  position: absolute;
+  left: 235px;
+  top: 492px;
+  width: 527px;
+  height: 628px;
+
+}
+
+footer {
+	position: relative;
+	clear: both;
+}
+
+.footer {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 36, 42, 60 );
+  background-color: #213a4d;
+  position: absolute;
+  left: 43px;
+  top: 967px;
+  width: 912px;
+  height: 104px;
+}
+
+.wheel {
+	float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 164, 174, 177 );
+  border-radius: 7px;
+  background-color: rgb( 255, 255, 255 );
+  position: relative;
+  margin: 48px 15px 18px 15px;
+  width: 142px;
+  height: 131px;
+/*  margin: 0;*/
+}

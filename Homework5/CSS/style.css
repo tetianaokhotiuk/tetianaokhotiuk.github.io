@@ -104,7 +104,10 @@ li a.a {
 }
 
 ul.menu li:nth-child(2) {
-	border-left: 1px solid #357fb9;
+	padding-top: 0;
+}
+
+ul.menu li:nth-child(3) {
 	padding-top: 0;
 }
 
@@ -127,8 +130,34 @@ li:nth-child(2):hover {
 }
 
 li:nth-child(2):before {
-	content: url(../images/flag.png);
+	content: ' ';
+    background: url(../images/flag.png) no-repeat;
+    height: 13px;
+    width: 21px;
+    position: relative;
+    display: inline-block;
+    top: 11px;
+    right: 5px;
+    padding-top: 11px;
 }
+
+li:nth-child(3):after {
+	content: ' ';
+    background: url(../images/border.png) no-repeat;
+    height: 25px;
+    width: 2px;
+    position: relative;
+    display: inline-block;
+    top: 7px;
+    left: 20px;
+   /* color: white;*/
+    /*padding-top: 11px;*/
+}
+
+/*li:nth-child(3) {
+	display: block;
+	height: 10px;
+}*/
 
 .checkbox {
 	padding: 20px 140px 0;
