@@ -152,10 +152,6 @@ li:nth-child(3):after {
     left: 20px;
 }
 
- a.border {
-	top: 11px;
-}
-
 .checkbox {
 	padding: 20px 140px 0;
 	color: #ccc;
