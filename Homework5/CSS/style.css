@@ -144,20 +144,17 @@ li:nth-child(2):before {
 li:nth-child(3):after {
 	content: ' ';
     background: url(../images/border.png) no-repeat;
-    height: 25px;
+    height: 24px;
     width: 2px;
     position: relative;
     display: inline-block;
-    top: 7px;
+    top: 11px;
     left: 20px;
-   /* color: white;*/
-    /*padding-top: 11px;*/
 }
 
-/*li:nth-child(3) {
-	display: block;
-	height: 10px;
-}*/
+ a.border {
+	top: 11px;
+}
 
 .checkbox {
 	padding: 20px 140px 0;
