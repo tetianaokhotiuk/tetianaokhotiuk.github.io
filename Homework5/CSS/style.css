@@ -111,14 +111,26 @@ ul.menu li:nth-child(3) {
 	padding-top: 0;
 }
 
-.menu li:hover {
+.menu li.li a:hover {
+	background-color: #4eabda;
+	color: #fff;
+	padding: 11px 20px 13px 20px;
+	margin: 0;
+}
+
+.menu li:focus {
 	background-color: #4eabda;
 	color: #fff;
 }
 
-a:hover {
+/*.menu li:hover {
+	background-color: #4eabda;
 	color: #fff;
-}
+}*/
+
+/*a:hover {
+	color: #fff;
+}*/
 
 li:first-child:hover,focus {
 	background-size: 100%;
