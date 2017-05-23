@@ -1,0 +1,30 @@
+.wrapper {
+	height: 600px;
+	width: 800px;
+	background-color: #fff;
+	border: 1px solid #000;
+	margin: 30px auto;
+}
+
+.button {
+	width: 40%;
+	margin-left: 250px;
+	margin-top: 20px;
+}
+
+.checkin,
+.checkin2,
+.checkin3,
+.checkin4,
+.checkin5,
+.checkin6,
+.checkin7,
+.checkin8,
+.checkin9
+ {
+	list-style-type: none;
+}
+
+h3 {
+	text-align: center;
+}
