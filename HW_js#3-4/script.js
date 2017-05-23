@@ -2,10 +2,11 @@ var div = document.createElement('div');
 div.className = "wrapper";
 document.body.appendChild(div);
 
-var h3 = document.createElement('h3');
+var h4 = document.createElement('h4');
+h4.classList.add("h4");
 var wrapper = document.querySelector(".wrapper");
-wrapper.appendChild(h3);
-h3.innerHTML = "Programming test"
+wrapper.appendChild(h4);
+h4.innerHTML = "Programming test"
 
 var ol = document.createElement("ol");
 ol.className = "questions";
@@ -30,7 +31,7 @@ questions.appendChild(li);
 li.innerHTML = "Question#3"
 
 var button = document.createElement("button");
-button.className = "btn-default";
+button.className = "btn-middle";
 button.classList.add("button");
 wrapper.appendChild(button);
 button.innerHTML = "Check answers"
@@ -46,11 +47,13 @@ var link = document.querySelector('.link');
 link.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox");
 input.setAttribute("type", "checkbox");
 var checkin = document.querySelector(".checkin");
 checkin.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox");
 label.className = "checking";
 var checkin = document.querySelector(".checkin");
 checkin.appendChild(label);
@@ -62,11 +65,13 @@ var link = document.querySelector('.link');
 link.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox1");
 input.setAttribute("type", "checkbox");
 var checkin2 = document.querySelector(".checkin2");
 checkin2.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox1");
 label.className = "checking";
 var checkin2 = document.querySelector(".checkin2");
 checkin2.appendChild(label);
@@ -78,11 +83,13 @@ var link = document.querySelector('.link');
 link.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox2");
 input.setAttribute("type", "checkbox");
 var checkin3 = document.querySelector(".checkin3");
 checkin3.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox2");
 label.className = "checking";
 var checkin3 = document.querySelector(".checkin3");
 checkin3.appendChild(label);
@@ -99,11 +106,13 @@ var link2 = document.querySelector('.link2');
 link2.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox3");
 input.setAttribute("type", "checkbox");
 var checkin4 = document.querySelector(".checkin4");
 checkin4.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox3");
 var checkin4 = document.querySelector(".checkin4");
 checkin4.appendChild(label);
 label.innerHTML = "variant of question #1"
@@ -115,10 +124,12 @@ link2.appendChild(li);
 
 var input = document.createElement('input');
 input.setAttribute("type", "checkbox");
+input.setAttribute("id", "cbox4");
 var checkin5 = document.querySelector(".checkin5");
 checkin5.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox4");
 var checkin5 = document.querySelector(".checkin5");
 checkin5.appendChild(label);
 label.innerHTML = "variant of question #2"
@@ -129,11 +140,13 @@ var link2 = document.querySelector('.link2');
 link2.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox5");
 input.setAttribute("type", "checkbox");
 var checkin6 = document.querySelector(".checkin6");
 checkin6.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox5");
 var checkin6 = document.querySelector(".checkin6");
 checkin6.appendChild(label);
 label.innerHTML = "variant of question #3"
@@ -149,11 +162,13 @@ var link3 = document.querySelector('.link3');
 link3.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox6");
 input.setAttribute("type", "checkbox");
 var checkin7 = document.querySelector(".checkin7");
 checkin7.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox6");
 var checkin7 = document.querySelector(".checkin7");
 checkin7.appendChild(label);
 label.innerHTML = "variant of question #1"
@@ -164,11 +179,13 @@ var link3 = document.querySelector('.link3');
 link3.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox7");
 input.setAttribute("type", "checkbox");
 var checkin8 = document.querySelector(".checkin8");
 checkin8.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox7");
 var checkin8 = document.querySelector(".checkin8");
 checkin8.appendChild(label);
 label.innerHTML = "variant of question #2"
@@ -179,11 +196,13 @@ var link3 = document.querySelector('.link3');
 link3.appendChild(li);
 
 var input = document.createElement('input');
+input.setAttribute("id", "cbox8");
 input.setAttribute("type", "checkbox");
 var checkin9 = document.querySelector(".checkin9");
 checkin9.appendChild(input);
 
 var label = document.createElement("label");
+label.setAttribute("for", "cbox8");
 var checkin9 = document.querySelector(".checkin9");
 checkin9.appendChild(label);
 label.innerHTML = "variant of question #3"
