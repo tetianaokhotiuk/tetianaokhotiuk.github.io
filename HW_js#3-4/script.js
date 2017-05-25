@@ -31,7 +31,7 @@ questions.appendChild(li);
 li.innerHTML = "Question#3"
 
 var button = document.createElement("button");
-button.className = "btn-middle";
+button.className = "btn-default";
 button.classList.add("button");
 wrapper.appendChild(button);
 button.innerHTML = "Check answers"
