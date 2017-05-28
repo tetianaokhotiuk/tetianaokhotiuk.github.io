@@ -1,0 +1,39 @@
+.watch {
+	height: 30%;
+	width: 90%;
+	background-color: #e6e6e6;
+	top: 20px;
+	left: 60px;
+	position: absolute;
+	float: left;
+	border-radius: 25px;
+	border: 3px solid black; 
+}
+
+button {
+	position: relative;
+	float: left;
+	top: 400px;
+	left: 200px;
+	margin-right: 80px; 
+}
+
+p.time{
+	text-align: center;
+}
+
+#time {
+	font-size: 155px;
+	top: 10;
+	line-height: 145px;
+}
+
+/*#timer {
+	margin-top: 10px;
+}*/
+
+.timer {
+	float: right;
+	margin: 0 500px;
+	font-size: 25px;
+}
