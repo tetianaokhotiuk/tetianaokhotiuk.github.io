@@ -1,4 +1,4 @@
-.watch {
+#timer1 {
 	height: 30%;
 	width: 90%;
 	background-color: #e6e6e6;
@@ -13,27 +13,22 @@
 button {
 	position: relative;
 	float: left;
-	top: 400px;
+	top: 200px;
 	left: 200px;
 	margin-right: 80px; 
 }
 
-p.time{
-	text-align: center;
-}
-
-#time {
+#watch {
+	position: relative;
 	font-size: 155px;
 	top: 10;
 	line-height: 145px;
+	left: 280px;
 }
 
-/*#timer {
-	margin-top: 10px;
-}*/
-
-.timer {
+#time {
+	margin-top: -10px;
 	float: right;
-	margin: 0 500px;
-	font-size: 25px;
+	margin-right: 400px;
+	font-size: 30px;
 }
