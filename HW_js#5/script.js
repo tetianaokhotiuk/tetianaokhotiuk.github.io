@@ -3,6 +3,7 @@ const $start = document.querySelector('#timer1 #start');
 const $stop = document.querySelector('#timer1 #stop');
 const $watch = document.querySelector('#timer1 #watch');
 
+
 var timer = createTimer(
   function(time) {
     
@@ -48,12 +49,14 @@ function createTimer (onTimeChange, onStateChange) {
     changeRunningState(true);
     time = Date.now();
     interval = setInterval(tick, 1);
+    $start.style.backgroundColor = "blue";
   }
   
   function pause () {
     changeRunningState(false);
     clearInterval(interval);
     $start.innerText = "continue";
+    $start.style.backgroundColor = "green";
   }
 
   function reset () {
@@ -68,7 +71,8 @@ function createTimer (onTimeChange, onStateChange) {
   function stop () {
     pause();
     reset();
-    $start.innerText = "start"
+    $start.innerText = "start";
+    $time.innerText = "000"
   }
 
   function tick () {

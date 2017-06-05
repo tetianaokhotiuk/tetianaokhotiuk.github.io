@@ -1,0 +1,64 @@
+#timer1 {
+	height: 30%;
+	width: 90%;
+	background-color: #e6e6e6;
+	top: 20px;
+	left: 60px;
+	position: absolute;
+	float: left;
+	border-radius: 25px;
+	border: 3px solid black; 
+}
+
+button.start {
+	position: relative;
+	float: left;
+	top: 100px;
+	left: 90px;
+	right: 20px; 
+	height: 130px;
+	width: 450px;
+	border-radius: 15px;
+	border: 3px solid black;
+	font-size: 50px; 
+	background-color: green;
+}
+
+button.stop {
+	position: relative;
+	float: left;
+	top: 57px;
+	left: 200px;
+	right: 20px; 
+	height: 130px;
+	width: 450px;
+	border-radius: 15px;
+	border: 3px solid black;
+	background-color: #F41432; 
+	font-size: 50px; 
+}
+
+#watch {
+	position: relative;
+	font-size: 155px;
+	top: 10;
+	line-height: 145px;
+	left: 300px;
+}
+
+#time {
+	margin-top: -10px;
+	float: right;
+	margin-right: 400px;
+	font-size: 30px;
+}
+
+.pause {
+	background-color: green;
+}
+
+.start {
+	background-color: blue;
+}
+	
+
