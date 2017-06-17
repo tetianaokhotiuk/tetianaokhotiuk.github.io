@@ -1,0 +1,39 @@
+.form {
+	margin: 20px auto;
+	margin-bottom: 0px;
+	height: 170px;
+	width: 500px;
+	border: 1px solid #eee;
+}
+
+.main {
+	margin: 20px auto;
+	height: 280px;
+	width: 550px;
+	border: 2px solid #eee;
+}
+
+.button {
+	margin-left: 22px;
+}
+
+.name1,
+.name2,
+.name3 {
+	width: 550px;
+	height: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.prompt {
+	height: 150%;
+	width: 190px;
+	margin-left: 280px; 
+	border: 2px solid #eee;
+	display: none;
+}
+
+.prompt3 {
+	height: 100%;
+}
