@@ -37,8 +37,8 @@ template = _.template(source);
 
 parent.innerHTML += template(test);
 
-var checkboxes = document.querySelectorAll('input[type="checkbox"]'),
-  output = document.getElementById("result");
+var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+ 
 
 document
   .getElementsByClassName("button")[0].addEventListener("click", function() {
