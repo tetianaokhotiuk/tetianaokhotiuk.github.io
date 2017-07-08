@@ -5,23 +5,24 @@ var test = {
     questions: [
       {
        title: 'Question #1',
-       answers: ['Variant 1.1', 'Variant 1.2',
-        'Variant 1.3'],
+       answers: ['Variant1.1', 'Variant1.2',
+        'Variant1.3'],
        correctAnswers: [1, 3]
      },
      {
        title: 'Question #2',
-       answers: ['Variant 2.1', 'Variant 2.2', 
-       'Variant 2.3', 'Variant 2.4'],
+       answers: ['Variant2.1', 'Variant2.2', 
+       'Variant2.3', 'Variant2.4'],
        correctAnswers: [1, 3, 4]
      },
      {
        title: 'Question #3',
-       answers: ['Variant 3.1', 
-       'Variant 3.2'],
+       answers: ['Variant3.1', 
+       'Variant3.2'],
        correctAnswers: [2]
-     }
-   ]
+     },
+
+   ],
  };
 
 localStorage.setItem('testStorage', JSON.stringify(test));
@@ -76,4 +77,4 @@ function badResult() {
     $('input:checked').prop('checked', false);
 };
 
-
+ 
