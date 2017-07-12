@@ -29,7 +29,17 @@ localStorage.setItem('testStorage', JSON.stringify(test));
 
 var myTest = JSON.parse(localStorage.getItem('testStorage'));
 
-var trueResult = [true,false,true,true,false,true,true,false,true];
+var getCorrectAnswers = question => question.answers.map(
+  (val, i) => question.correctAnswers.includes(i+1)
+);
+
+var concat = (list, values) => list.concat(values);
+var unnest = list => list.reduce(concat, []);
+
+var getAllCorrectAnswers = questions => {
+  var correct = questions.map(getCorrectAnswers);
+  return unnest(correct);
+}
 
 var parent = document.getElementById('wrapper');
 
@@ -40,14 +50,13 @@ parent.innerHTML += template(test);
 
 var checkboxes = document.querySelectorAll('input[type="checkbox"]');
  
-
 document
   .getElementsByClassName("button")[0].addEventListener("click", function() {
     
     var mine = _.map(checkboxes,function(item) {
       return item.checked;
     });
-    var u = _.isEqual(mine.sort(), trueResult.sort());
+    var u = _.isEqual(mine.sort(), getAllCorrectAnswers(test.questions).sort());
     
       if (u===true) {
         return testResult();
