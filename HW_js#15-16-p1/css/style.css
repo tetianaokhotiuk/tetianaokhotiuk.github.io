@@ -1,0 +1,39 @@
+.form-container {
+	background-color: #fff;
+	padding: 10px 15px;
+	max-width: 500px;
+	margin: 10px auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-container input {
+	border: 2px solid #000;
+	height: 50px;
+	font-size: 20px;
+	padding-left: 15px;
+	flex-grow: 4; 
+	flex-basis: 100px;
+}
+
+.form-container button {
+	cursor:pointer;
+	min-height: 50px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #03a9f4;
+	flex-grow: 1;
+	flex-basis: 50px;
+}
+
+.wrapper {
+	height: 600px;
+	width: 500px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.img-item {
+	margin: 15px;
+
+}
