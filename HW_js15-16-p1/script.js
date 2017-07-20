@@ -1,12 +1,10 @@
 $(function () {
 
-  var $modal, $parent, $elem;
-  var $body = $('body');
-
   function callAPI(inputValue) {
     $.ajax({
       url:
-      'https://pixabay.com/api/?key=5857784-9fcfd09b6b8da3aa719f05782&q=' + inputValue + '&image_type=photo&callback=callbackFunc&orientation=vertical&per_page=9&min_width=50px&context=?',
+      'https://pixabay.com/api/?key=5857784-9fcfd09b6b8da3aa719f05782&q='
+       + inputValue + encodeURI('&image_type=photo&callback=callbackFunc&orientation=vertical&per_page=9&min_width=50px&context=?'),
       dataType: 'jsonp'
     });
   }
