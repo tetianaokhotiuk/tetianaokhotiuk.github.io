@@ -37,6 +37,7 @@
 
   pushBtn.addEventListener('click', function (e) {
     e.preventDefault();
+    localStorage.clear();
     newArr.push(getData(form));
     try {
       localStorage.setItem('new',JSON.stringify(newArr));
@@ -55,7 +56,7 @@
   function getData(put) {
     testRadio.question = put.querySelector('#q1').value;
     testRadio.answers = getArrValue(put);
-   testRadio.correctAnswers = getArrValue(put);;
+   testRadio.correctAnswers = getArrVal(put);;
     return testRadio ;
   };
 
@@ -66,5 +67,14 @@
       a.push(item.value);
     });
     return a;
+  };
+
+  function getArrVal(put) {
+    var inp = put.querySelectorAll('.answer');
+    var b = [];
+    inp.forEach(function (item) {
+      b.push(item.value);
+    });
+    return b;
   }
 })();
