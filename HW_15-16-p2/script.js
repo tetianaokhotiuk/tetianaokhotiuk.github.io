@@ -7,17 +7,15 @@
     correctAnswers: []
   };
 
-  var testRadio = {};
-  var testCheckbox = {};
+  var testRadio = {}, testCheckbox = {};
   testRadio.__proto__ = test;
   testCheckbox.__proto__ = test;
 
-  var addAnsBtn = document.querySelector('#addAns');
-  var pushBtn = document.querySelector('#push');
-  var form = document.querySelector('.form');
-  var number = 1;
-
-  var newArr = [];
+  var addAnsBtn = document.querySelector('#addAns'),
+    pushBtn = document.querySelector('#push'),
+    form = document.querySelector('.form'),
+    number = 1,
+    newArr = [];
 
     function createAskLabel(num) {
     var str = '<label><div class="sort">Answer ' + num + '</div><input class="input ask" type="text" id="c' + num + '"></label>';
