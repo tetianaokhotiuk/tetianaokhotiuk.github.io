@@ -18,8 +18,8 @@
     newArr = [];
 
     function createAskLabel(num) {
-    var str = '<label><div class="sort">Answer ' + num + '</div><input class="input ask" type="text" id="c' + num + '"></label>';
-    var e = document.createElement('li');
+    var str = '<label><div class="sort">Answer ' + num + '</div><input class="input ask" type="text" id="c' + num + '"></label>',
+    e = document.createElement('li');
     e.innerHTML = str;
     return e;
   }
@@ -59,8 +59,8 @@
   };
 
   function getArrValue(put) {
-    var inp = put.querySelectorAll('.ask');
-    var a = [];
+    var inp = put.querySelectorAll('.ask'),
+    a = [];
     inp.forEach(function (item) {
       a.push(item.value);
     });
@@ -68,8 +68,8 @@
   };
 
   function getArrVal(put) {
-    var inp = put.querySelectorAll('.answer');
-    var b = [];
+    var inp = put.querySelectorAll('.answer'),
+    b = [];
     inp.forEach(function (item) {
       b.push(item.value);
     });
