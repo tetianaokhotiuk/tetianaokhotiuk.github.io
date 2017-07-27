@@ -1,0 +1,43 @@
+.carousel-img {
+	padding: 0;
+	width: 1165px;
+	height: 470px;
+}
+.b-carousel  {
+	width: 70%; /* ширина всего блока */
+	margin: 35px auto;
+	height: 470px;
+	overflow: hidden;
+}
+
+.h-carousel-items {
+	width: 10000px; /* устанавливаем большую ширину для набора элементов карусели, чтобы в неё всё поместилось */
+	position: relative; /* позиционируем блок относительно основной области карусели */
+}
+	.b-carousel-block {
+		float: left; /* выстраиваем все элементы карусели в ряд */
+		width: 1165px; /* задаём ширину каждого элемента */
+	
+}
+
+.carousel-buttons {
+	cursor: pointer;
+	width: 7%;
+	z-index: 2;
+	margin: -65px auto;
+
+	li {
+		padding-right: 15px;
+	}
+}	
+
+.sq1,
+.sq2,
+.sq3 {
+	height: 7px;
+	width: 7px;
+	background-color: #fff;
+	border: 2px solid #fff;
+}	
+				
+	
