@@ -1,0 +1,36 @@
+.wrapper {
+	height: 600px;
+	width: 800px;
+	background-color: #fff;
+	border: 1px solid #000;
+	margin: 30px auto;
+}
+
+.button {
+	width: 40%;
+	margin-left: 250px;
+	margin-top: 20px;
+}
+
+li
+ {
+	list-style-type: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+.li2 {
+	margin-left: 20px;
+}
+
+.li1 {
+	font-weight: bold;
+}
+
+.box {
+	width: 100px;
+	height: 200px;
+	border: 1px solid black;
+}
