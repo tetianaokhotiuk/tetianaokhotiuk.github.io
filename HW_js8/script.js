@@ -5,30 +5,26 @@ $(document).ready(function(){
     });
 
     $(".input").mouseover(function(){
-var id = $(this).attr('id');
+        var id = $(this).attr('id');
 
-    switch(id) {
+        switch(id) {
 
-    case 'first_name':
-        $(".prompt1").show(); 
-        $(this).mouseout(function() {
-        $(".prompt1").hide();
-        });
-        break;
+            case 'first_name':
+                $(".prompt1").show();                 
+                break;
 
-    case 'last_name':
-        $(".prompt2").show(); 
-        $(this).mouseout(function() {
-        $(".prompt2").hide();
-        });
-        break;
+            case 'last_name':
+                $(".prompt2").show();                 
+                break;
 
-    case 'address':
-        $(".prompt3").show(); 
-        $(this).mouseout(function() {
-        $(".prompt3").hide();
-        });
-        break;
-    }
+            case 'address':
+                $(".prompt3").show();                 
+                break;
+            }
     });
+           
+    $(this).mouseout(function() {
+        $(".prompt").hide();
+    });
+   
 });
