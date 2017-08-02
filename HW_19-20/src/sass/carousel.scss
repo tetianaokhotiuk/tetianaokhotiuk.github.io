@@ -29,7 +29,19 @@
 	li {
 		padding-right: 15px;
 	}
-}	
+}
+
+@media (max-width: 1133px) {
+	    .carousel-buttons {
+		    width: 10%		    
+	    }
+    }
+
+@media (max-width: 800px) {
+	    .carousel-buttons {
+		    width: 13%		    
+	    }
+    }	
 
 .sq1,
 .sq2,

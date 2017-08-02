@@ -56,10 +56,24 @@ body {
 
 .news {
 	@extend .general;
-	height: 776px;
+	height: 1016px;
+	overflow: hidden;
+}
+
+@media (max-width: 1359px) {
+  .news {
+    height: 1100px
+  }
+}
+
+@media (max-width: 1359px) {
+  .b {
+    height: 476px
+  }
 }
 
 nav {
+
   ul {
     margin: 0;
     padding: 0;
@@ -89,15 +103,19 @@ nav {
 .first {
 	@extend .general;
 	height: 1014px;
+
 		.top-panel {
 			font-family: UbM;
 			height: 50px;
 			background-color: $dark-background;
 
+
+
 			a {
 				color: #fff;
 				padding: 15px;
 				border: 1px solid #000;
+				background-color: $dark-background;
 			}
 
 			a:hover {
@@ -107,20 +125,28 @@ nav {
 				background-color: blue;
 				color: #fff;
 			}
-
 		}
-
+		
 		.media-panel {
 			position: relative;
 			float: right;
-			width: 16%;
+			width: 75%;
+
+			nav ul {
+				float: right;
 
 			li {
 				padding-left: 15px;
 				padding-right: -16px;
 			}
 		}
+    }
 
+    @media (max-width: 500px) {
+	    .media-panel {
+		    width: 100%		    
+	    }
+    }
 		.top {
 			margin-top: 30px;
 			height: 70px;
@@ -135,7 +161,6 @@ nav {
 		.search {
 			position: relative;
 			float: right;
-			
 
 			input {
 				background-image: url(../img/search.png);   
@@ -154,12 +179,13 @@ nav {
 		.articles {
 			font-family: UbM;
 			position: relative;
-			height: 300px;
+			height: 645px;
 			margin-top: 150px;
 
 			.article {
 				position: relative;
 				float: left;
+				margin-bottom: 20px;
 				$block_width: 920px;
 				width: $block_width/3;
 
@@ -215,16 +241,17 @@ nav {
 						}
 					  }
 				}
+
 				.info_n {
 					width: $block_width/3/4;
 					position: relative;
 					margin-top: -40px;
 					float: left;
+
 					.num {
 						text-align: center;
 						font-size: 56px;
-						color: #000;
-						
+						color: #000;	
 						margin-right: 5px;
 						font-family: UbM, sans-serif;
 					      font-size: 90px;
@@ -233,6 +260,18 @@ nav {
 			}
 		}
 }
+
+@media (max-width: 1331px) {
+	    .first {
+		    height: 1234px;		    
+	    }
+    }
+
+@media (max-width: 893px) {
+	    .first {
+		    height: 1454px;		    
+	    }
+    }
 
 //SERVICES
 
@@ -252,19 +291,21 @@ nav {
 		.photos {
 			position: relative;
 			display: flex;
-			height: 380px;
+			flex-wrap: wrap;
+			height: 330px;
+
 				figure {
 					margin: 0;
 					padding: 20px;
+
 						img {
 							height: 195px;
 							width: 195px;
-			}
+			}		
 
 			img:hover {
 				transition: all $transitionTime;
-				opacity: .5;
-		      
+				opacity: .5;  
 				cursor: pointer;
 			}
 
@@ -280,7 +321,19 @@ nav {
 			}
 		}
 	}
+
+		@media (max-width: 939px) {
+			    .photos {
+				    height: 660px;		    
+			    }
+    }
 }
+
+@media (max-width: 1365px) {
+	    .services {
+		    height: 732px;		    
+	    }
+    }
 
 //LAST SECTION
 
@@ -293,6 +346,7 @@ nav {
 		  background-color: $dark-background;
 		  @extend .down-panel;
 		  height: 323px;
+		  overflow: hidden;
 
 			  .result {
 				  height: 250px;
@@ -338,8 +392,21 @@ nav {
 	    }
 	  }
 	}
+
+	@media (max-width: 1331px) {
+	  .section-footer {
+	    height: 593px
+	  }
+}
+	@media (max-width: 674px) {
+  .section-footer {
+    height: 993px
+  }
+}
+
 	.footer {
 		height: 58px;
+		overflow: hidden;
 		background-color: $darkGrey;
 		@extend .down-panel;
 
@@ -392,9 +459,32 @@ nav {
 						    }
 					}
 				}
-			}
-	}
 
+						@media (min-width: 874px) {
+						.footer-last {
+						height: 108px
+						}
+					}
+		
+				}
+				@media (max-width: 1249px) {
+			.footer {
+			height: 108px
+			  }
+		    }
+			}
+
+			@media (max-width: 1331px) {
+				.last {
+				height: 660px
+				}
+			}
+
+			@media (max-width: 674px) {
+				.last {
+				height: 1010px
+				}
+			}
 
 
 
