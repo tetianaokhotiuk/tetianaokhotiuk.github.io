@@ -1,36 +1,34 @@
 $(document).ready(function(){
+
     $(".button").click(function(){
-        $(".prompt").show(1);
+        $(".prompt").show();
     });
-});
 
-$(document).ready(function(){
-    $(".input1").mouseover(function(){
-        $(".prompt1").show(1);
+    $(".input").mouseover(function(){
+var id = $(this).attr('id');
+
+    switch(id) {
+
+    case 'first_name':
+        $(".prompt1").show(); 
         $(this).mouseout(function() {
-        	$(".prompt1").hide(1);
+        $(".prompt1").hide();
         });
-    });
-});
+        break;
 
-$(document).ready(function(){
-    $(".input2").mouseover( function(){
-        $(".prompt2").show(1);
-    });
-});
-
-$(document).ready(function(){
-    $(".input2").mouseout( function(){
-        $(".prompt2").hide(1);
-    });
-});
-
-
-$(document).ready(function(){
-    $(".input3").mouseover(function(){
-        $(".prompt3").show(1);
+    case 'last_name':
+        $(".prompt2").show(); 
         $(this).mouseout(function() {
-        	$(".prompt3").hide(3);
+        $(".prompt2").hide();
         });
+        break;
+
+    case 'address':
+        $(".prompt3").show(); 
+        $(this).mouseout(function() {
+        $(".prompt3").hide();
+        });
+        break;
+    }
     });
 });
