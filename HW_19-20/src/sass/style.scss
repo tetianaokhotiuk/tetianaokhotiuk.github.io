@@ -44,9 +44,9 @@ body {
 
 .sprite-article_style {
    display: block;
-	        left: 115px;
+	        left: 33%;
 	        position: absolute;
-	        top: -20px;
+	        top: -10%;
 	        width: 32px;
 	        height: 32px;
 	        content: '';
@@ -56,20 +56,7 @@ body {
 
 .news {
 	@extend .general;
-	height: 1016px;
 	overflow: hidden;
-}
-
-@media (max-width: 1359px) {
-  .news {
-    height: 1100px
-  }
-}
-
-@media (max-width: 1359px) {
-  .b {
-    height: 476px
-  }
 }
 
 nav {
@@ -102,29 +89,35 @@ nav {
 
 .first {
 	@extend .general;
-	height: 1014px;
 
 		.top-panel {
 			font-family: UbM;
-			height: 50px;
+			height: 4vw;
+			font-size: 1.2vw;
 			background-color: $dark-background;
 
-
+			li {
+				padding: 1.7%;
+				border-right: 1px solid #000;
+			}
 
 			a {
 				color: #fff;
-				padding: 15px;
-				border: 1px solid #000;
 				background-color: $dark-background;
 			}
 
 			a:hover {
 				color: $li_hover;
 			}
-			a:active,focus {
+			a:active {
 				background-color: blue;
 				color: #fff;
 			}
+		}
+
+		.current {
+			background-color: blue;
+			color: #fff;
 		}
 		
 		.media-panel {
@@ -165,13 +158,13 @@ nav {
 			input {
 				background-image: url(../img/search.png);   
 			    background-repeat: no-repeat;   
-			    background-position: 155px;      
-			    font-size: 13px; 
+			    background-position: 95%;      
+			    font-size: 1vw; 
 				background-color: $dark-background;
 				border: 1px solid #000;
-				padding: 5px;
-				margin: 7px 7px;
-				height: 25px;
+				padding: 0.5vw;
+				margin: 0.5vw;
+				height: 2vw;
 				outline: none;
 			}
 		}
@@ -179,15 +172,15 @@ nav {
 		.articles {
 			font-family: UbM;
 			position: relative;
-			height: 645px;
-			margin-top: 150px;
+			margin-top: 12%;
+			padding-bottom: 18%;
 
 			.article {
 				position: relative;
 				float: left;
 				margin-bottom: 20px;
 				$block_width: 920px;
-				width: $block_width/3;
+				width: 33%;
 
 					&:nth-child(1) {
 				      &:before {
@@ -211,10 +204,11 @@ nav {
 				    }
 
 				.info {
-					width: $block_width/3/4*3 - 15px;
 					position: relative;
 					float: left;
 					padding-right: 5px;
+					font-size: 1vw;
+					width: 70%;
 						.info_title {
 							padding-left: 38px;
 
@@ -243,45 +237,34 @@ nav {
 				}
 
 				.info_n {
-					width: $block_width/3/4;
+					width: 20%;
 					position: relative;
-					margin-top: -40px;
+					margin-top: -12%;
 					float: left;
 
 					.num {
 						text-align: center;
-						font-size: 56px;
+						font-size: 6vw;
 						color: #000;	
 						margin-right: 5px;
-						font-family: UbM, sans-serif;
-					      font-size: 90px;
-					      opacity: .1;
+						font-family: UbM, sans-serif;					
+					    opacity: .1;
 				}
 			}
 		}
 }
 
-@media (max-width: 1331px) {
-	    .first {
-		    height: 1234px;		    
-	    }
-    }
-
-@media (max-width: 893px) {
-	    .first {
-		    height: 1454px;		    
-	    }
-    }
-
 //SERVICES
 
 .services {
-	padding-top: 30px;
+	padding-top: 2%;
+	padding-bottom: 3%;
 	position: relative;
 	width: 100%;
-	height: 391px;
+	height: 120%;
 	font-family: UbM;
 	background-color: $dark-background;
+	overflow: hidden;
 
 		p {
 			color: #fff;
@@ -292,16 +275,19 @@ nav {
 			position: relative;
 			display: flex;
 			flex-wrap: wrap;
-			height: 330px;
+			height: 95%;
+			overflow: hidden;
 
 				figure {
 					margin: 0;
-					padding: 20px;
+					padding: 2%;
+					width: 20%;
+					height: 30%;
 
 						img {
-							height: 195px;
-							width: 195px;
-			}		
+							height: 70%;
+							width: 100%;
+			}
 
 			img:hover {
 				transition: all $transitionTime;
@@ -320,49 +306,39 @@ nav {
 				cursor: pointer;
 			}
 		}
-	}
-
-		@media (max-width: 939px) {
-			    .photos {
-				    height: 660px;		    
-			    }
-    }
+	}    
 }
-
-@media (max-width: 1365px) {
-	    .services {
-		    height: 732px;		    
-	    }
-    }
 
 //LAST SECTION
 
 .last {
 	@extend .general;
-	height: 384px;
+	height: 100%;
 	background-color: $dark-background;
 
 		.section-footer {
 		  background-color: $dark-background;
 		  @extend .down-panel;
-		  height: 323px;
+		  height: 95%;
 		  overflow: hidden;
 
 			  .result {
-				  height: 250px;
+				  height: 95%;
 				  @extend .panel;
 				  background-color: $dark-background;
 			  }
   
 	  .f-nav {
 		  width: 100%;
-		  height: 300px;
 		  
 	    .item {
 	      display: flex;
 	      flex-direction: column;
-	      padding-right: 25px;
-	      padding-left: 25px;	    
+	      padding-right: 2%;
+	      padding-left: 2%;
+	      padding-bottom: 4%;	
+	      width: 20%; 
+	      height: 80%;   
 	    }
 
 	    .head {
@@ -370,18 +346,18 @@ nav {
 	      text-transform: uppercase;
 	      color: $White;
 	      font-family: UbM, sans-serif;
-	      font-size: 16px;
+	      font-size: 1em;
+	      padding-right: 15%;
 	    }
 
 	    .link {
-		  width: 180px;
 	      display: block;
 	      border-bottom: 1px solid $Grey;
 	      font-family: Arial, sans-serif;
-	      font-size: 13px;
+	      font-size: 1vw;
 	      color: $Grey;
 	      text-decoration: none;
-	      line-height: 3;
+	      line-height: 3em;
 	      &:last-child {
 	      border-bottom: none;
 	      }
@@ -393,19 +369,8 @@ nav {
 	  }
 	}
 
-	@media (max-width: 1331px) {
-	  .section-footer {
-	    height: 593px
-	  }
-}
-	@media (max-width: 674px) {
-  .section-footer {
-    height: 993px
-  }
-}
-
 	.footer {
-		height: 58px;
+		height: 5%;
 		overflow: hidden;
 		background-color: $darkGrey;
 		@extend .down-panel;
@@ -413,13 +378,13 @@ nav {
 		.footer-last {
 		  background-color: $darkGrey;
 		  @extend .panel;
-		  height: 58px;
+		  height: 100%;
 
 			  .f-info {
 			    width: 100%;
 			    display: flex;
 			    justify-content: space-between;
-			    padding: 20px 0;
+			    padding: 2% 0;
 
 				    &__list{
 				      display: flex;
@@ -429,6 +394,7 @@ nav {
 					    &__item {
 					      margin: 0 20px 0 0;
 					      list-style-type: none;
+					      font-size: 1vw;
 					    }
 
 					    &__icon {
@@ -456,35 +422,13 @@ nav {
 
 						    &__right-box {
 						      color: $Grey;
+						      font-size: 1vw;
+						      padding-top: 4px;
 						    }
 					}
-				}
-
-						@media (min-width: 874px) {
-						.footer-last {
-						height: 108px
-						}
-					}
-		
-				}
-				@media (max-width: 1249px) {
-			.footer {
-			height: 108px
-			  }
-		    }
-			}
-
-			@media (max-width: 1331px) {
-				.last {
-				height: 660px
-				}
-			}
-
-			@media (max-width: 674px) {
-				.last {
-				height: 1010px
-				}
-			}
+				}		
+			}			
+		}
 
 
 
