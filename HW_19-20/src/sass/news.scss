@@ -141,7 +141,7 @@ $transitionTime: .3s;
         background-color: $White;
         border: 1px solid $Grey;
         &::-webkit-details-marker {
-          display: none
+          display: none;
         }
         &:before {
           display: block;
@@ -168,12 +168,6 @@ $transitionTime: .3s;
           color: $White;
         }
     }
-}
-
- @media (min-width: 1539px) {
-  .main-news {
-    height: 1700px
-  }
 }
 }
 
