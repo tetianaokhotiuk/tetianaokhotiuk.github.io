@@ -1,0 +1,45 @@
+@import "tools";
+
+.section {
+	&__button {
+		padding: 1rem 4rem;
+		border-radius: 20px;
+		width: 100%;
+
+		&--white {
+			color: $red;
+			background-color: $light;
+			border: 2px solid $red;
+		}
+
+	    &--red {
+		    background-color: $red;
+		    color: $light;
+		    @media #{$tablet} {
+			      width: 80%;
+		    }
+		    @media #{$notebook} {
+			      width: 60%;
+		    }
+		}
+
+		&--form {
+			background-color: $red;
+		    color: $light;
+		    width: 85%;
+		    @media #{$tablet} {
+			      width: 60%;
+			      padding: .75rem;
+			      float: left;
+			      margin-left: .5rem;
+		    }
+		    @media #{$notebook} {
+			      width: 60%;
+		    }
+		}
+
+		&--head {
+		    padding: 1rem 1.55rem;
+	    }
+	}
+}

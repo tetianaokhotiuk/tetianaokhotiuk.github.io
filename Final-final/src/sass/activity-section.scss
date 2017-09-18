@@ -1,0 +1,40 @@
+@import "tools";
+
+.section {
+	&__activity {
+		position: absolute;
+	    justify-content: center;
+	    width: 100%;
+	    color: $light;
+	    height: 100%;
+	    display: flex;
+	    align-items: center;
+	    @media #{$tablet} {
+			padding-left: 1rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	&__item {
+		@media #{$tablet} {
+			padding: .5rem;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		@media #{$tablet} {
+		height: $height;
+	}
+
+	@media #{$notebook} {
+			height: $height2;
+		}
+}
+}
+
+.activness {
+	
+}
+
+

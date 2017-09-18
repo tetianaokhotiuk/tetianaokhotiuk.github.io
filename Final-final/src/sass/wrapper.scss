@@ -1,0 +1,18 @@
+@import "tools";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  &--img {
+    background: url('../img/header.jpg') no-repeat scroll top;
+    background-size: cover;
+  }
+
+  &__red {
+    border-bottom: 2px solid $red;
+  }
+}
+
+

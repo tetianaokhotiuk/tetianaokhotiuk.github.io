@@ -1,0 +1,109 @@
+@import "tools";
+@import "reset";
+
+.page-header {
+  padding-top: 1rem;
+  &__promo {
+    margin: auto;
+    padding: 1rem 0;
+    @media #{$tablet} {
+      padding: 10rem 0;
+    }
+  }
+}
+
+.navbar {
+  @media #{$tablet} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+}
+
+.logo {
+  display: block;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  border: 2px solid transparent;
+  color: $primary-light;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  
+  &:hover {
+    border: 2px solid $primary-light;
+    text-shadow: 0 0 5px $primary-light;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+  @media (max-width: 767px) {
+    flex-flow: row wrap;
+    margin-top: 1rem;
+  }
+  @media #{$tablet} {
+    flex-basis: 50%;
+    flex-grow: 0;
+    padding-bottom: 0;
+  }
+  &__item {
+    flex-basis: 30%;
+    flex-grow: 0;
+  }
+  &__link {
+    display: block;
+    border: 2px solid transparent;
+    color: $primary-light;
+    text-align: center;
+    font-size: 1.25rem;
+    &:hover {
+      border: 2px solid $primary-light;
+      border-radius: 20px;
+      color: $primary-light;
+      text-decoration: none;
+    }
+  }
+}
+
+.promo {
+  text-align: center;
+  color: $primary-light;
+
+  &__title {
+    @include font-settings(extra);
+    @media #{$tablet} {
+      @include font-settings(xs-large);
+      width: 80%;
+    }
+
+    @media #{$notebook} {
+      @include font-settings(large);
+      width: 33%;
+     
+    }
+  }
+
+  &__text {
+    padding: 0 1rem;
+  }
+}
+
+.button {
+  padding: 2rem 0 6rem;
+}
+
+v-align {
+  @media(min-width: 766px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+
