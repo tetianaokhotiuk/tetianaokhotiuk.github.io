@@ -72,7 +72,7 @@ gulp.task('bundleCss', function() {
 // собирем js
 gulp.task('bundleJs', function() {
   return gulp.src(paths.src.js)
-    .pipe(concat('scripts.js'))
+    .pipe(rigger())
     .pipe(babel({
       presets: ['env']
     }))

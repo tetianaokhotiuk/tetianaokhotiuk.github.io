@@ -1,0 +1,92 @@
+@import "tools";
+
+.ideas {
+
+  position: relative;
+  width: 100%;
+ 
+   text-align: center;
+  margin: 0 auto;
+  padding: 0;
+    @media #{$tablet} {
+      
+    }
+
+    @media #{$notebook} {
+     
+    }
+
+  .tile {
+    display: flex;
+    margin: auto;
+
+    text-align: center;
+      @media #{$mobile} {
+      width: 300px;
+    }
+      @media #{$tablet} {
+      width: 620px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 940px;
+    }
+  
+    &__item {
+      display: flex;
+      height: 290px;
+      width: 290px;
+      margin-bottom: 20px;
+      padding: 0;
+      border-radius: 10px;
+      overflow: hidden;
+
+         @media #{$tablet} {
+            width: 300px;
+            height: 300px;
+          }
+
+      &:nth-child(5) {
+
+            @media #{$tablet} {
+            width: 620px;
+        }
+      }
+      &:nth-child(6) {
+  
+            @media #{$tablet} {
+            width: 620px;
+        }
+      }
+
+      &:nth-child(7) {
+  
+            @media #{$tablet} {
+            width: 620px;
+        }
+
+        @media screen and (min-width: 990px) {
+            width: 300px;
+        }
+      }
+      
+    }
+    &__img {
+      margin: 0 auto;
+      position: relative;
+      min-width: 100%;
+      height: auto;
+      min-height: 100%;
+    }
+    &__title {
+      position: absolute;
+      margin: 0;
+      top: 45%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: $primary-light;
+      font-size: 2em;
+    }
+  }
+}

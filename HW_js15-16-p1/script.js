@@ -4,7 +4,7 @@ $(function () {
     $.ajax({
       url:
       'https://pixabay.com/api/?key=5857784-9fcfd09b6b8da3aa719f05782&q='
-       + inputValue + encodeURI('&image_type=photo&callback=callbackFunc&orientation=vertical&per_page=9&min_width=50px&context=?'),
+       + inputValue + encodeURI('&image_type=photo&callback=callbackFunc&orientation=vertical&per_page=9&min_width=100px&context=?'),
       dataType: 'jsonp'
     });
   }

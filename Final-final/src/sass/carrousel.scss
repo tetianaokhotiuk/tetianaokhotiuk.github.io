@@ -16,6 +16,11 @@
 	    align-items: center;
 	    width: 100%;
 	    }
+
+	    @media screen and (min-width: 1024px) {
+		   padding-left: 7%;
+		   padding-right: 7%;
+	    }
     }
 
 	&__header {
@@ -63,6 +68,7 @@
     position: absolute;
     bottom: 10%;
     padding-left: 1.25rem;
+    padding-right: 1.25rem;
 
 	&__text {
 		color: $secondary-light;
@@ -83,17 +89,53 @@
 
 .bx-wrapper {
 	@media #{$mobile} {
-		    margin: 0 auto 0;
+		    margin: 0 auto -12%;
+		    width: 100%;
 	    }
+
+   
 
     @media #{$tablet} {
 		    width: 33%;
 	    }
 
+    @media screen and (min-width: 1024px) {
+	    margin: 10px;
+    }
+
+
     @media #{$notebook} {
-		    margin: 0;
+		    margin: 10px;
 	    }
 }
+
+.images1 {
+	height: 240px;
+	width: 270px;
+	background: url('../img/work-1.jpg') no-repeat;
+	@media #{$tablet} {
+		    display: none;
+	    }
+}
+
+.images2 {
+	height: 240px;
+	width: 270px;
+	background: url('../img/work-2.jpg') no-repeat;
+	@media #{$tablet} {
+		    display: none;
+	    }
+}
+
+.images3 {
+	height: 240px;
+	width: 270px;
+	background: url('../img/work-3.jpg') no-repeat;
+	@media #{$tablet} {
+		    display: none;
+	    }
+}
+
 
 
 

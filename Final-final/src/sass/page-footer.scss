@@ -1,6 +1,7 @@
 @import "tools";
 
 .foot {
+  border-top: 5px solid $red;
   @media #{$tablet} {
       padding: 2rem;
     }
