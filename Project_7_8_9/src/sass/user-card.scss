@@ -1,0 +1,27 @@
+@import "tools";
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid $secondary-light;
+  border-radius: 0.5rem;
+  color: $primary-light;
+  @media #{$notebook} {
+    padding: 1rem;
+  }
+  &__img {
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 100%;
+    @media #{$tablet} {
+      width: 100%;
+    }
+  }
+  figcaption {
+    width: 100%;
+    text-align: center;
+  }
+}

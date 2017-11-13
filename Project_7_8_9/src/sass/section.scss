@@ -1,0 +1,61 @@
+@import "tools";
+
+.section {
+  padding: 3rem 0;
+  @media #{$tablet} {
+    padding: 6rem 0;
+  }
+  &__header {
+    text-align: center;
+    color: $primary-light;
+    margin-bottom: 3rem;
+ 
+  }
+}
+
+.section--users {
+  .section__body {
+    @media #{$mobile} {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    @media #{$tablet} {
+      justify-content: space-around;
+    }
+  }
+  .section__item {
+    @media (max-width: 767px) {
+      padding: 1rem;
+    }
+    @media #{$mobile} {
+      flex-basis: 50%;
+      flex-grow: 1;
+    }
+
+    @media #{$tablet} {
+      flex-basis: 22%;
+      flex-grow: 0;
+    }
+  }
+}
+
+.section--articles {
+  .section__header {
+    color: $secondary-accent;
+  }
+  .section__body {
+    @media #{$notebook} {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+  .section__item {
+    padding: 1rem;
+    @media #{$notebook} {
+      flex-grow: 0;
+      flex-basis: 49%;
+    }
+  }
+}
+

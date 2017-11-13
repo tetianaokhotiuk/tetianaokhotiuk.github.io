@@ -1,0 +1,41 @@
+@import "tools";
+
+.page-footer {
+  padding: 2rem;
+  @media #{$tablet} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.legal {
+  color: $primary-light;
+  text-align: center;
+  text-transform: uppercase;
+  @media (max-width: 767px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  &__item {
+    margin-right: 0.5rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+  }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    @media #{$tablet} {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}

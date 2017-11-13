@@ -1,0 +1,37 @@
+@import "tools";
+
+.article {
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    margin-bottom: 1rem;
+    max-height: $base-line-height * 3;
+    overflow: hidden;
+    color: $secondary-accent;
+  }
+  &__text {
+    color: $primary-dark;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: $primary-light;
+    background-color: $primary-accent;
+    text-transform: capitalize;
+    font-weight: bold;
+    @media #{$mobile} {
+      width: 25%;
+    }
+    &:hover {
+      background-color: $secondary-accent;
+      text-shadow: 0 0 5px $primary-light;
+    }
+  }
+}

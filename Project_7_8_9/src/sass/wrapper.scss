@@ -1,0 +1,19 @@
+@import "tools";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  &--img {
+    background: url('../img/headline.jpg') no-repeat scroll top;
+    background-size: cover;
+    @media #{$tablet} {
+      background-attachment: fixed;
+    }
+  }
+  &--blue {
+    background-color: $primary-accent;
+  }
+  &--dark {
+    background-color: $primary-dark;
+  }
+}

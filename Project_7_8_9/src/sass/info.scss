@@ -1,0 +1,21 @@
+@import "tools";
+
+.info {
+  padding: 2rem 0.5rem;
+  @media #{$tablet} {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 1rem;
+  }
+  &__item {
+    @media (max-width: 767px) {
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media #{$tablet} {
+      flex: 0 0 30%;
+    }
+  }
+}
