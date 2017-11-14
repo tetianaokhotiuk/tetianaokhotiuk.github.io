@@ -1,0 +1,70 @@
+@import "tools";
+
+.format {
+         margin: 3.5rem 0;
+	@media #{$tablet} {			  
+				      padding: 3rem 0;
+				      margim: 0;
+			    }
+
+	.header {
+		&__title {
+			text-align: center;
+			padding: 1rem 0;
+			@media #{$tablet} {			  
+				      padding: 3rem 0 1rem;
+			    }
+			}
+
+		&__text {
+			text-align: center;
+			@media #{$tablet} {			  
+				      padding-bottom: 1.5rem;
+			    }		
+		    }
+		}
+
+	.form {
+			text-align: center;
+			padding: 2rem 0;
+			@media #{$tablet} {
+			padding: 0 4rem;
+			}
+			&__box {
+				padding: .5rem;
+				@media #{$tablet} {			  
+				      padding: 0;
+			    }
+			}
+
+			&__form {
+		    padding: 2rem 0;
+		    }
+
+			&__input {
+				padding: .7rem;
+				width: 85%;
+				@media #{$tablet} {			  
+				      width: 55%;
+				      margin-top: .73rem;
+			    }
+			    @media (min-width: 992px) {			  
+				      width: 45%;
+				      margin-top: 1.2rem;
+			    }
+			    @media (min-width: 1400px) {			  
+				      width: 45%;
+				      margin-top: 1.2rem;
+			    }
+				border: 1px solid $secondary-dark;
+				color: $secondary-dark;
+				@media #{$tablet} {			  
+				      float: right;
+			    }
+			}
+
+			&__input[placeholder] {
+				color: $secondary-dark;
+			}
+		}
+	}

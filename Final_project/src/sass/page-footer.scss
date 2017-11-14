@@ -1,0 +1,52 @@
+@import "tools";
+
+.foot {
+  border-top: 5px solid $red;
+  @media #{$tablet} {
+      padding: 0 2rem 1.5rem;
+    }
+}
+
+a.red {
+	color: $red;
+}
+
+li.logo-panel {
+    
+a {
+	color: $secondary-dark;
+	display: block;
+	float: left;
+	padding: 0;
+	}
+}
+
+.text {
+	&__logo {
+		font-size: .8rem;
+		color: $secondary-dark;
+		@media #{$tablet} {
+			margin-top: -3.5rem;      
+    }
+	}
+
+	&__logo2 {
+		padding: 0 0 2rem;
+	}
+}
+
+.log {
+    @media #{$tablet} {
+	margin-top: -7.5rem;
+	}
+}
+
+.bottom-panel {
+	@media #{$tablet} {
+	margin-top: 2.7rem;
+	}
+}
+
+
+
+

@@ -1,0 +1,57 @@
+@import "tools";
+
+.section {
+	&__title {
+		padding: .5rem;
+		
+		text-align: center;
+	}
+
+	&__body {
+		text-align: center;
+		
+		@media #{$notebook} {
+			padding: 2rem 9rem;
+		}
+
+		&--activness {
+			@media #{$tablet} {
+		padding: 1rem;
+			}
+
+		@media #{$notebook} {
+			padding: 2rem 9rem;
+		}
+		
+		}
+	}
+}
+
+.user-card {
+    
+	&__img {
+		border-radius: 100%;
+		height: auto;
+		width: 45%;
+	}
+
+	&__text {
+		font-size: 1.25rem;
+		padding: 1rem;
+	}
+
+	&__icon {
+	    margin-left: -11%;
+	    margin-bottom: 7%;
+	    height: 15%;
+	    width: 15%;
+	}
+}
+
+.photo {
+	@media #{$tablet} {
+		    padding: 1rem 5rem;
+	    }
+}
+
+
